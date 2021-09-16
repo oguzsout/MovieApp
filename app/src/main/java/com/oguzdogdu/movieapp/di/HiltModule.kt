@@ -1,6 +1,6 @@
 package com.oguzdogdu.movieapp.di
 
-import com.oguzdogdu.movieapp.Constants.BASE_URL
+import com.oguzdogdu.movieapp.utils.Constants.BASE_URL
 import com.oguzdogdu.movieapp.service.MovieInterface
 import dagger.Module
 import dagger.Provides

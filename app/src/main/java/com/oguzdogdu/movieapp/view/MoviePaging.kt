@@ -2,7 +2,7 @@ package com.oguzdogdu.movieapp.view
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.oguzdogdu.movieapp.Constants
+import com.oguzdogdu.movieapp.utils.Constants
 import com.oguzdogdu.movieapp.model.Search
 import com.oguzdogdu.movieapp.service.MovieInterface
 
