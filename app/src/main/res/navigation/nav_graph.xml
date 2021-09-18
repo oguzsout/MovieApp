@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/movieFragment"
         android:name="com.oguzdogdu.movieapp.view.MovieFragment"
-        android:label="MovieFragment" >
+        tools:layout="@layout/fragment_movie"
+        android:label="Movie Lists">
         <action
             android:id="@+id/action_movieFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
@@ -16,6 +17,6 @@
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.oguzdogdu.movieapp.view.DetailsFragment"
-        android:label="fragment_details"
+        android:label="Movie Detail"
         tools:layout="@layout/fragment_details" />
 </navigation>
