@@ -18,5 +18,14 @@
         android:id="@+id/detailsFragment"
         android:name="com.oguzdogdu.movieapp.view.DetailsFragment"
         android:label="Movie Detail"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="imdbId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_detailsFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+    </fragment>
 </navigation>

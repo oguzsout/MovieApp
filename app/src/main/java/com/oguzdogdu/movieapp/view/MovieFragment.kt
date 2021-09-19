@@ -5,6 +5,7 @@ import android.view.*
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.oguzdogdu.movieapp.R
 import com.oguzdogdu.movieapp.adapter.MoviePagingAdapter
@@ -40,6 +41,10 @@ class MovieFragment : Fragment(), SearchView.OnQueryTextListener {
 
         setRecyclerView()
 
+        movieAdapter.onMovieClick {
+            val action = MovieFragmentDirections.actionMovieFragmentToDetailsFragment(it)
+            findNavController().navigate(action)
+        }
 
     }
 

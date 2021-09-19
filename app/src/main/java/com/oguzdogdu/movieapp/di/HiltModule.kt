@@ -1,5 +1,6 @@
 package com.oguzdogdu.movieapp.di
 
+import com.oguzdogdu.movieapp.repository.MovieDetailsRepository
 import com.oguzdogdu.movieapp.utils.Constants.BASE_URL
 import com.oguzdogdu.movieapp.service.MovieInterface
 import dagger.Module
@@ -22,5 +23,11 @@ object HiltModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(MovieInterface::class.java)
+    }
+
+    @Singleton
+    @Provides
+    fun provideRepository(movieInterface: MovieInterface): MovieDetailsRepository {
+        return MovieDetailsRepository((movieInterface))
     }
 }

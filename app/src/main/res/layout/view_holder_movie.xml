@@ -30,8 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:contentDescription="@string/movie_photo"
-                android:padding="4dp"
-                app:load="@{movie.poster}" />
+                android:downloadUrl="@{movie.poster}"
+                android:padding="4dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/movie_title"
